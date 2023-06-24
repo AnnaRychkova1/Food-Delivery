@@ -1,0 +1,276 @@
+:root {
+    --text-main-color: #2C2C2C;;
+    --text-accent-color: #BBF330;
+    --text-accenr-dark-color: #7EB101;
+    --text-grey-color: #505050;
+
+    --bg-white: #FFFFFF;
+    --bg-yellow: #FFE550;
+
+    --btn-bg-yell: #FFE450;;
+    --btn-bg-grn: #BBF330;;
+
+    --brd-btn-bg-grn: #7EB101;
+    --brd-btn-bg-yell: #FFE450;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--text-main-color);
+    background-color: var(--bg-white);
+}
+
+/**
+  |============================
+  | Reset
+  |============================
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list {
+    list-style: none;
+}
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/**
+  |============================
+  | Common style
+  |============================
+*/
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.logo {}
+
+.logo-img {}
+
+.section-title {}
+
+/**
+  |============================
+  | Header
+  |============================
+*/
+
+.header {}
+
+.header-container {}
+
+.header-logo {}
+
+.header-nav {}
+
+.header-list {}
+
+.header-item {}
+
+.header-link {}
+
+.header-button {}
+
+/**
+  |============================
+  | Main
+  |============================
+*/
+
+.main {}
+
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+
+.hero {}
+
+.hero-container {}
+
+.hero-title {}
+
+.hero-text {}
+
+.hero-button {}
+
+.hero-img {}
+
+/**
+  |============================
+  | About section
+  |============================
+*/
+
+.about-section {}
+
+.about-container {}
+
+.about-img-apple {}
+
+.about-title {}
+
+.about-main-text {}
+
+.about-list {}
+
+.about-item {}
+
+.about-img-svg {}
+
+.about-subtitle {}
+
+.about-text {}
+
+.about-button {}
+
+/**
+  |============================
+  | Favorites section
+  |============================
+*/
+
+.favorites-section {}
+
+.favorite-container {}
+
+.favorites-title {}
+
+.favorites-text {}
+
+.favorites-list {}
+
+.favorites-item {}
+
+.favorites-img {}
+
+/**
+  |============================
+  | Reviews
+  |============================
+*/
+
+.reviews-section {}
+
+.reviews-container {}
+
+.reviews-title {}
+
+.reviews-main-text {}
+
+.reviews-list {}
+
+.reviews-item {}
+
+.reviews-description {}
+
+.reviews-cust-card {}
+
+.reviews-photo {}
+
+.reviews-subtitle {}
+
+.reviews-text {}
+
+/**
+  |============================
+  | Offers
+  |============================
+*/
+
+.offers-section {}
+
+.offers-container {}
+
+.offers-title {}
+
+.offers-text {}
+
+.offers-button {}
+
+.offers-img {}
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+
+.footer {}
+
+.footer-container {}
+
+.footer-logo {}
+
+.footer-nav-list {}
+
+.footer-nav-item {}
+
+.footer-nav-link {}
+
+.footer-input-div {}
+
+.footer-input-text {}
+
+.footer-button {}
+
+.footer-privacy-link {}
+
+.footer-rules-div {}
+
+.footer-rules-list {}
+
+.footer-rules-item {}
+
+.footer-rules-link {}
+
+.footer-rules-text {}
