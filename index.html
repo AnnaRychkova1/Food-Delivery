@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FoodSta</title>
+    <link
+      rel="shortcut icon"
+      href="./images/icons/foodfavicon.svg"
+      type="image/svg"
+    />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,13 +29,9 @@
     <header class="header">
       <div class="container header-container">
         <a class="link logo header-logo" href="./index.html">
-          <img
-            class="logo-img"
-            src="./images/logo.svg"
-            alt="Logo FoodSta"
-            width="66"
-            height="52"
-          />
+          <svg class="logo-icon" width="62" height="52">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
         </a>
         <div class="header-right">
           <nav class="header-nav">
@@ -60,73 +61,83 @@
       <!-- Hero section -->
       <section class="section hero">
         <div class="container hero-container">
-          <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-          <p class="hero-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
-          </p>
-          <button class="btn hero-button" type="button">Order Now</button>
-          <img
-            class="hero-img"
-            src="./images/hero-food.png"
-            alt="Big plate with tasty food"
-            width="511"
-            height="511"
-          />
+          <div class="hero-left">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat.
+            </p>
+            <button class="btn hero-button" type="button">Order Now</button>
+          </div>
+          <div class="hero-right">
+            <svg class="img-left-icon" width="40" height="48">
+              <use href="./images/icons.svg#left"></use>
+            </svg>
+            <img
+              class="hero-img"
+              src="./images/hero-food.png"
+              alt="Big plate with tasty food"
+              width="511"
+              height="511"
+            />
+            <svg class="img-right-icon" width="40" height="48">
+              <use href="./images/icons.svg#right"></use>
+            </svg>
+          </div>
         </div>
       </section>
       <!-- About our Offerings -->
       <section class="section about-section">
         <div class="container about-container">
-          <img
-            class="about-img-apple"
-            src="./images/apple.png"
-            alt="Green apple"
-            width="502"
-            height="526"
-          />
-          <h2 class="about-title section-title">
-            What &#146; Special About Our Offerings
-          </h2>
-          <p class="about-main-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
-          </p>
-          <ul class="list about-list">
-            <li class="about-item">
-              <img
-                class="about-img-svg"
-                src="./images/rocket-launch.svg"
-                alt="Rocket"
-                width="32"
-                height="32"
-              />
-              <h3 class="about-subtitle">Fasest Delivery</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-            </li>
-            <li class="about-item">
-              <img
-                class="about-img-svg"
-                src="./images/touch-app.svg"
-                alt="Touch app"
-                width="32"
-                height="32"
-              />
-              <h3 class="about-subtitle">Easy To Order</h3>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-            </li>
-          </ul>
-          <button class="btn about-button" type="button">Order Now</button>
+          <div class="about-left">
+            <img
+              class="about-img-apple"
+              src="./images/apple.png"
+              alt="Green apple"
+              width="502"
+              height="526"
+            />
+          </div>
+          <div class="about-right">
+            <h2 class="about-title section-title">
+              What&#146;s Special About Our Offerings
+            </h2>
+            <p class="about-main-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat.
+            </p>
+            <ul class="list about-list">
+              <li class="about-item">
+                <div class="about-circle">
+                  <svg class="about-icon" width="32" height="32">
+                    <use href="./images/icons.svg#rocket-launch"></use>
+                  </svg>
+                </div>
+                <h3 class="about-subtitle">Fasest Delivery</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+              <li class="about-item">
+                <div class="about-circle">
+                  <svg class="about-icon" width="32" height="32">
+                    <use href="./images/icons.svg#touch-app"></use>
+                  </svg>
+                </div>
+                <h3 class="about-subtitle">Easy To Order</h3>
+                <p class="about-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+            </ul>
+            <button class="btn about-button" type="button">Order Now</button>
+          </div>
         </div>
       </section>
       <!-- Our favorites -->
@@ -139,7 +150,7 @@
           <ul class="list favorites-list">
             <li class="favorites-item">
               <img
-                class="favorites-img"
+                class="favorites-img img"
                 src="./images/gamburger.png"
                 alt="Gamburger"
                 width="315"
@@ -203,7 +214,9 @@
           </p>
           <ul class="list reviews-list">
             <li class="reviews-item">
-              <p></p>
+              <svg class="reviews-icon" width="101" height="16">
+                <use href="./images/icons.svg#stars"></use>
+              </svg>
               <p class="reviews-description">
                 &#34;The Best app I have used to order food in a while, so many
                 options to choose from too, I would recommend to a freind, No
@@ -215,12 +228,16 @@
                   src="./images/customer-one.png"
                   alt="Customer man"
                 />
-                <h3 class="reviews-subtitle">Sumith Shah</h3>
-                <p class="reviews-text">Some Dude</p>
+                <div class="reviews-cust-name">
+                  <h3 class="reviews-subtitle">Sumith Shah</h3>
+                  <p class="reviews-text">Some Dude</p>
+                </div>
               </div>
             </li>
             <li class="reviews-item">
-              <p></p>
+              <svg class="reviews-icon" width="101" height="16">
+                <use href="./images/icons.svg#stars"></use>
+              </svg>
               <p class="reviews-description">
                 &#34;The ease with which I can just go in and order what i want
                 was amazing, It has been a very pleasant experience ordering
@@ -232,8 +249,10 @@
                   src="./images/customer-two.png"
                   alt="Customer woman"
                 />
-                <h3 class="reviews-subtitle">Sumith Shah</h3>
-                <p class="reviews-text">Some Dude</p>
+                <div class="reviews-cust-name">
+                  <h3 class="reviews-subtitle">Sumith Shah</h3>
+                  <p class="reviews-text">Some Dude</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -242,62 +261,68 @@
       <!-- Special Offers -->
       <section class="section offers-section">
         <div class="container offers-container">
-          <h2 class="offers-title section-title">
-            Subscribe To Get Special Offers
-          </h2>
-          <p class="offers-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-          <form action="">
-            <input type="text" />
-            <button class="btn offers-button" type="submit">Subscribe</button>
-          </form>
-          <img class="offers-img" src="./images/banan.png" alt="Banana" />
+          <div class="offers-left">
+            <h2 class="offers-title section-title">
+              Subscribe To Get Special Offers
+            </h2>
+            <p class="offers-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+            <div class="offers-active">
+              <form class="offers-form" action="">
+                <input type="text" />
+              </form>
+              <button class="btn offers-button" type="submit">Subscribe</button>
+            </div>
+          </div>
+          <div class="offers-right">
+            <img class="offers-img" src="./images/banan.png" alt="Banana" />
+          </div>
         </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer-container">
-        <a class="link logo footer-logo" href="./index.html">
-          <img
-            class="logo-img"
-            src="./images/logo.svg"
-            alt="Logo FoodSta"
-            width="66"
-            height="52"
-          />
-        </a>
-        <ul class="list footer-nav-list">
-          <li class="footer-nav-item">
-            <a class="link footer-nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="footer-nav-item">
-            <a class="link footer-nav-link" href="#">About</a>
-          </li>
-          <li class="footer-nav-item">
-            <a class="link footer-nav-link" href="#">Service</a>
-          </li>
-          <li class="footer-nav-item">
-            <a class="link footer-nav-link" href="#">Menu</a>
-          </li>
-          <li class="footer-nav-item">
-            <a class="link footer-nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <div class="footer-input-div">
-          <p class="footer-input-text">Subscribe</p>
-          <form action="">
-            <input type="text" />
-            <button class="btn footer-button" type="submit">Subscribe</button>
-          </form>
-          <p class="footer-input-text">
-            By subscribing you agree to with our
-            <a class="link footer-privacy-link" href="#">Privacy Policy</a>
-          </p>
+        <div class="footer-top">
+          <a class="link logo footer-logo" href="./index.html">
+            <svg class="" width="62" height="52">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="list footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="link footer-nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="link footer-nav-link" href="#">About</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="link footer-nav-link" href="#">Service</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="link footer-nav-link" href="#">Menu</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="link footer-nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="footer-input-div">
+            <p class="footer-input-text">Subscribe</p>
+            <div class="footer-active">
+              <form class="footer-form" action="footer-form">
+                <input type="text" />
+              </form>
+              <button class="btn footer-button" type="submit">Subscribe</button>
+            </div>
+            <p class="footer-privacy-text">
+              By subscribing you agree to with our
+              <a class="link footer-privacy-link" href="#">Privacy Policy</a>
+            </p>
+          </div>
         </div>
-        <div class="footer-rules-div">
+        <div class="footer-down">
           <ul class="list footer-rules-list">
             <li class="footer-rules-item">
               <a class="link footer-rules-link" href="">Privacy Policy</a>
